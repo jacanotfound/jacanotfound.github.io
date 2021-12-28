@@ -1,0 +1,485 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(20deg, #ECF39E, #fff, #fff);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+main {
+    background: linear-gradient(30deg, #90A955, #ECF39E, #fff );
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(350deg, #132A13, #31572C, #4F772D);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+i {
+    transition: color ease-in-out 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/** Nav section **/
+
+.logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 60px;
+}
+
+.logo > h {
+    font-weight: 700;
+    font-size: large;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(avatar.png);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    gap: 10px;
+}
+
+.dropmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform ease 0.2s;
+    transform-origin: right;
+    gap: 10px;
+}
+
+.home, .wallpapers-desktop {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color ease 0.2s, box-shadow ease 0.2s;
+}
+
+.home:hover {
+    background-color: #4F772D;
+    box-shadow: rgba(49, 87, 44, 0.7) 0px -50px 36px -28px inset;
+}
+
+.home:hover > i {
+    color: white;
+}
+
+.home > i {
+    color: #4F772D;
+    transition: color ease 0.2s;
+}
+
+.wallpapers-desktop:hover {
+    background-color: #90A955;
+    box-shadow: rgba(79, 119, 45, 0.7) 0px -50px 36px -28px inset;
+}
+
+.wallpapers-desktop:hover > i {
+    color: white;
+}
+
+.wallpapers-desktop > i {
+    transition: color ease 0.2s;
+    color: #90A955;
+}
+
+.button {
+    background: none;
+    border: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color ease 0.2s, box-shadow ease 0.2s;
+}
+
+.button:hover {
+    background-color: #31572C;
+    box-shadow: rgba(19, 42, 19, 0.7) 0px -50px 36px -28px inset;
+}
+
+.button > i {
+    color: #31572C;
+    transition: color ease 0.2s;
+}
+
+.button:hover > i {
+    color: white;
+}
+
+/**Nav Section**/
+
+/**Main Section**/
+
+.banner {
+    width: 100%;
+    height: 350px;
+    background-image: url(banner2.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 65px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.category {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+}
+
+.wallpapers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > h {
+    margin-top: 10px;
+    font-weight: 500;
+    width: 400px;
+    text-align: center;
+}
+
+.wallpaper1, .wallpaper2, .wallpaper3, .wallpaper4, .wallpaper5, .wallpaper6, .wallpaper7, .wallpaper8, .wallpaper9, .wallpaper10, .wallpaper11, .wallpaper12, .wallpaper13, .wallpaper14, .wallpaper15, .wallpaper16 {
+    width: 400px;
+    height: 700px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: 400px 700px;
+    transition: box-shadow ease-in-out 0.2s, transform ease-in-out 0.2s;
+    overflow: hidden;
+}
+
+.wallpaper1:hover > h, .wallpaper2:hover > h, .wallpaper3:hover > h, .wallpaper4:hover > h, .wallpaper5:hover > h, .wallpaper6:hover > h, .wallpaper7:hover > h, .wallpaper8:hover > h, .wallpaper9:hover > h, .wallpaper10:hover > h, .wallpaper11:hover > h, .wallpaper12:hover > h, .wallpaper13:hover > h, .wallpaper14:hover > h, .wallpaper15:hover > h, .wallpaper16:hover > h {
+    opacity: 1;
+}
+
+.wallpaper1 > h, .wallpaper2 > h, .wallpaper3 > h, .wallpaper4 > h, .wallpaper5 > h, .wallpaper6 > h, .wallpaper7 > h, .wallpaper8 > h, .wallpaper9 > h, .wallpaper10 > h, .wallpaper11 > h, .wallpaper12 > h, .wallpaper13 > h, .wallpaper14 > h, .wallpaper15 > h, .wallpaper16 > h {
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 670px;
+    opacity: 0;
+    transition: opacity linear 0.2s;
+}
+
+.wallpaper1 {
+    background-image: url(hyperbeast.jpg);
+}
+
+.wallpaper2 {
+    background-image: url(awpasimov.jpg);
+}
+
+.wallpaper3 {
+    background-image: url(neonak47.jpg);
+}
+
+.wallpaper4 {
+    background-image: url(cloud9.jpg);
+}
+
+.wallpaper5 {
+    background-image: url(MCwallpaper1.jpg);
+}
+
+.wallpaper6 {
+    background-image: url(MCwallpaper2.jpg);
+}
+
+.wallpaper7 {
+    background-image: url(MCwallpaper3.jpg);
+}
+
+.wallpaper8 {
+    background-image: url(MCwallpaper4.jpg);
+}
+
+.wallpaper9 {
+    background-image: url(purpleraven.jpg);
+}
+
+.wallpaper10 {
+    background-image: url(abstract.jpg);
+}
+
+.wallpaper11 {
+    background-image: url(partytrooper.jpg);
+}
+
+.wallpaper12 {
+    background-image: url(raptor.jpg);
+}
+
+.wallpaper13 {
+    background-image: url(savetheworld.jpg);
+}
+
+.wallpaper14 {
+    background-image: url(kevin.jpg);
+}
+
+.wallpaper15 {
+    background-image: url(theend.jpg);
+}
+
+.wallpaper16 {
+    background-image: url(ghostmeowscles.jpg);
+}
+
+.wallpaper1:hover, .wallpaper2:hover, .wallpaper3:hover, .wallpaper4:hover, .wallpaper5:hover, .wallpaper6:hover, .wallpaper7:hover, .wallpaper8:hover, .wallpaper9:hover, .wallpaper10:hover, .wallpaper11:hover, .wallpaper12:hover, .wallpaper13:hover, .wallpaper14:hover, .wallpaper15:hover, .wallpaper16:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.01);
+}
+
+.download-button {
+    width: 220px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #4F772D;
+    margin: 15px auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    transition: background-color linear 0.2s;
+    transition: color linear 0.2s;
+}
+
+.download-button:hover {
+    background-color: #31572C;
+    color: black;
+}
+
+.download-button:hover > i {
+    color: black;
+}
+
+.download-button > i {
+    color: white;
+    transition: color linear 0.2s;
+}
+
+/**Main Section**/
+
+/**Footer Section**/
+
+.social-media {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.youtube, .facebook, .instagram, .twitter {
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: transform ease-in-out 0.2s;
+}
+
+.youtube:hover, .facebook:hover, .instagram:hover, .twitter:hover {
+    transform: scale(1.1);
+}
+/**Footer Section**/
+
+/**Mobile Section**/
+
+@media screen and (max-width: 600px) {
+    .wallpaper1, .wallpaper2, .wallpaper3, .wallpaper4, .wallpaper5, .wallpaper6, .wallpaper7, .wallpaper8, .wallpaper9, .wallpaper10, .wallpaper11, .wallpaper12, .wallpaper13, .wallpaper14, .wallpaper15, .wallpaper16 {
+        height: 540px;
+        width: 320px;
+        background-size: 320px 540px;
+    }
+
+    .wallpaper1 > h, .wallpaper2 > h, .wallpaper3 > h, .wallpaper4 > h, .wallpaper5 > h, .wallpaper6 > h, .wallpaper7 > h, .wallpaper8 > h, .wallpaper9 > h, .wallpaper10 > h, .wallpaper11 > h, .wallpaper12 > h, .wallpaper13 > h, .wallpaper14 > h, .wallpaper15 > h, .wallpaper16 > h {
+        margin-top: 510px;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .logo > h {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .banner {
+        font-size: 50px;
+    }
+
+    .menu {
+        margin-right: 10px;
+        gap: 5px;
+    }
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+        background-position: center;
+        background-size: 70px 70px;
+    }
+
+    .youtube, .facebook, .instagram, .twitter {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .dropmenu {
+        transform: scaleX(0);
+        gap: 5px;
+    }
+
+    .dropmenu--active {
+        transform: scaleX(1);
+    }
+
+    .button {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+        background-color: #31572C;
+        box-shadow: rgba(19, 42, 19, 0.7) 0px -50px 36px -28px inset;
+    }
+
+    .home, .wallpapers-desktop {
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .wallpapers-desktop {
+        background-color: #90A955;
+        box-shadow: rgba(79, 119, 45, 0.7) 0px -50px 36px -28px inset;
+    }
+
+    .home {
+        background-color: #4F772D;
+        box-shadow: rgba(49, 87, 44, 0.7) 0px -50px 36px -28px inset;
+    }
+
+    .button:hover > i {
+        color: black;
+    }
+
+    .home:hover > i {
+        color: black;
+    }
+
+    .wallpapers-desktop:hover > i {
+        color: black;
+    }
+
+    .home > i {
+        color: white;
+    }
+
+    .button > i {
+        color: white;
+        transition: transform ease 0.2s;
+    }
+
+    .wallpapers-desktop > i {
+        color: white;
+    }
+
+    .button--active > i {
+        transform: rotate(90deg);
+    }
+
+}
+

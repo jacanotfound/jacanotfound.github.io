@@ -1,0 +1,675 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(20deg, #ec4257, #fff, #fff);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(350deg, #250902, #720026, #ce4257);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+
+
+/** Nav section **/
+
+.logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 60px;
+}
+
+.logo > h {
+    font-weight: 700;
+    font-size: large;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(avatar.png);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    gap: 10px;
+}
+
+.dropmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform ease 0.2s;
+    transform-origin: right;
+    gap: 10px;
+}
+
+.wallpapers-mobile, .wallpapers-desktop {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color ease 0.2s, box-shadow ease 0.2s;
+}
+
+.wallpapers-mobile:hover {
+    background-color: #ce4257;
+    box-shadow: rgba(114, 0, 38, 0.5) 0px -50px 36px -28px inset;
+}
+
+.wallpapers-desktop:hover {
+    background-color: #FF9B54;
+    box-shadow: rgba(216, 104, 63, 0.7) 0px -50px 36px -28px inset;
+}
+
+.wallpapers-desktop:hover > i {
+    color: white;
+}
+
+.wallpapers-desktop > i {
+    transition: color ease 0.2s;
+    color: #FF9B54;
+}
+
+.wallpapers-mobile:hover > i {
+    color: white;
+}
+
+.wallpapers-mobile > i {
+    color: #ce4257;
+    transition: color ease 0.2s;
+}
+
+.button {
+    background: none;
+    border: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color ease 0.2s, box-shadow ease 0.2s;
+}
+
+
+.button:hover {
+    background-color: #720026;
+    box-shadow: rgba(37, 9, 2, 0.5) 0px -50px 36px -28px inset;
+}
+
+.button:hover > i {
+    color: white;
+}
+
+/**Nav Section**/
+
+
+
+/**Main Section**/
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    height: 350px;
+    background-image: url(banner.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 65px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.news {
+    width: 900px;
+    height: 800px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+    background: linear-gradient(30deg, #90A955, #ECF39E, #fff );
+}
+
+.news2 {
+    width: 900px;
+    height: 800px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(-30deg, #5BC0BE, #6FFFE9, #fff);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 80%;
+    height: 760px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow {
+    width: 320px;
+    height: 150px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    background-image: url(arrow.jpg);
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+    animation: ruch ease 1.5s infinite normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 120px;
+}
+
+@keyframes ruch {
+    0% {transform: translateX(0px);}
+    50% {transform: translateX(20px);}
+}
+
+@keyframes plakat1 {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.01); box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;}
+}
+
+@keyframes plakat2 {
+    0% {transform: translateY(0);}
+    50% {transform: scale(1.005) translateY(-5px); box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;}
+}
+
+.content > h1 {
+    color: black;
+}
+
+.content > h3 {
+    color: black;
+}
+
+.plakat > h {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.plakat {
+    width: 300px;
+    height: 760px;
+    border-radius: 20px;
+    background-image: url(plakat.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform ease 0.2s, box-shadow ease 0.2s;
+    margin: 20px;
+    animation: plakat1 infinite normal ease 1.7s;
+}
+
+.plakat2 {
+    width: 860px;
+    height: 400px;
+    background-image: url(plakat2.jpg);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+    animation: plakat2 infinite 1.7s ease normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallpapers-icon {
+    width: 280px;
+    height: 400px;
+    margin-bottom: 180px;
+    transform: scale(0.9);
+}
+
+.wallpaper1 {
+    width: 150px;
+    height: 270px;
+    border-radius: 20px;
+    background-image: url(raptor.jpg);
+    background-position: center;
+    background-size: 150px 270px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.wallpaper2 {
+    width: 150px;
+    height: 270px;
+    border-radius: 20px;
+    background-image: url(MCwallpaper1.jpg);
+    background-position: center;
+    background-size: 150px 270px;
+    transform: translateY(-200px) translateX(65px);
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.wallpaper3 {
+    width: 150px;
+    height: 270px;
+    border-radius: 20px;
+    background-image: url(cloud9.jpg);
+    background-position: center;
+    background-size: 150px 270px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    transform: translateX(128px) translateY(-412px);
+}
+
+.category > h {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.content2 > h1 {
+    color: black;
+}
+
+.content2 > h3 {
+    color: black;
+}
+
+.content2 { 
+    margin: 20px;
+}
+
+.wallpapers-icon2 {
+    width: 820px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dwallpaper1 {
+    width: 490px;
+    height: 280px;
+    background-image: url(winterwallpaper1.jpg);
+    border-radius: 20px;
+    background-size: 490px 280px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    position: absolute;
+    transform: translateX(-165px) translateY(-40px);
+}
+
+.dwallpaper2 {
+    width: 490px;
+    height: 280px;
+    background-image: url(winterwallpaper2.jpg);
+    border-radius: 20px;
+    background-size: 490px 280px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    position: absolute;
+}
+
+.dwallpaper3 {
+    width: 490px;
+    height: 280px;
+    background-image: url(winterwallpaper3.jpg);
+    border-radius: 20px;
+    background-size: 490px 280px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    position: absolute;
+    transform: translateX(165px) translateY(40px);
+}
+
+ /**Main Section**/
+
+
+
+/**Footer Section**/
+
+.social-media {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.youtube, .facebook, .instagram, .twitter {
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: transform ease-in-out 0.2s;
+}
+
+.youtube:hover, .facebook:hover, .instagram:hover, .twitter:hover {
+    transform: scale(1.1);
+}
+
+/**Footer Section**/
+
+/**Mobile Section**/
+
+@media screen and (max-width: 1800px) {
+    .display {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .news, .news2 {
+        width: 700px;
+    }
+
+    .plakat2 {
+        width: 660px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wallpapers-icon2 {
+        width: 620px;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .dwallpaper1 {
+        width: 350px;
+        height: 200px;
+        border-radius: 20px;
+        background-image: url(winterwallpaper1.jpg);
+        background-size: 350px 200px;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+        position: absolute;
+        transform: translateY(-80px) translateX(-135px);
+    }
+
+    .dwallpaper2 {
+        width: 350px;
+        height: 200px;
+        border-radius: 20px;
+        background-image: url(winterwallpaper2.jpg);
+        background-size: 350px 200px;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+        position: absolute;
+    }
+
+    .dwallpaper3 {
+        width: 350px;
+        height: 200px;
+        border-radius: 20px;
+        background-image: url(winterwallpaper3.jpg);
+        background-size: 350px 200px;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+        position: absolute;
+        transform: translateY(80px) translateX(135px);
+    }
+
+    .content2 {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo > h {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .menu {
+        margin-right: 10px;
+        gap: 5px;
+    }
+
+    .news {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plakat {
+        height: 360px;
+        justify-content: center;
+    }
+
+    .plakat > h {
+        display: none;
+    }
+
+    .wallpapers-icon {
+        transform: scale(0.7);
+        margin-bottom: 0px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .content {
+        margin: 0px;
+        height: 25%;
+    }
+
+    .content > h3 {
+        font-size: 14px;
+    }
+
+    .button {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+        background-color: #720026;
+        box-shadow: rgba(37, 9, 2, 0.5) 0px -50px 36px -28px inset;
+    }
+
+    .button > i {
+        color: white;
+        transition: color ease 0.2s;
+    }
+
+    .wallpapers-desktop, .wallpapers-mobile {
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .wallpapers-mobile > i {
+        color: white;
+    }
+
+    .wallpapers-mobile:hover > i {
+        color: black;
+    }
+
+    .wallpapers-desktop:hover > i {
+        color: black;
+    }
+
+    .button:hover > i {
+        color: black;
+        transition: transform ease 0.2s;
+    }
+
+    .button--active > i {
+        transform: rotate(90deg);
+    }
+
+    .wallpapers-mobile {
+        background-color: #ce4257;
+        box-shadow: rgba(114, 0, 38, 0.5) 0px -50px 36px -28px inset;
+    }
+
+    .wallpapers-desktop {
+    background-color: #FF9B54;
+    box-shadow: rgba(216, 104, 63, 0.7) 0px -50px 36px -28px inset;
+    }
+
+    .wallpapers-desktop > i {
+        color: white;
+    }
+
+    .dropmenu {
+        transform: scaleX(0);
+        gap: 5px;
+    }
+
+     .dropmenu--active {
+        transform: scaleX(1);
+    }
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+        background-position: center;
+        background-size: 70px 70px;
+    }
+
+    .banner {
+        font-size: 60px;
+    }
+
+    .news, .news2 {
+        width: 400px;
+    }
+
+    .plakat2 {
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wallpapers-icon2 {
+        width: 340px;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .dwallpaper1 {
+        width: 270px;
+        height: 150px;
+        border-radius: 20px;
+        background-image: url(winterwallpaper1.jpg);
+        background-size: 270px 150px;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+        margin-top: 5px;
+        transform: translateX(-20px);
+    }
+
+    .dwallpaper2 {
+        width: 270px;
+        height: 150px;
+        border-radius: 20px;
+        background-image: url(winterwallpaper2.jpg);
+        background-size: 270px 150px;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+        transform: translateY(-40px);
+    }
+
+    .dwallpaper3 {
+        width: 270px;
+        height: 150px;
+        border-radius: 20px;
+        background-image: url(winterwallpaper3.jpg);
+        background-size: 270px 150px;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+        transform: translateY(-80px) translateX(20px);
+    }
+
+    .content2 {
+        margin: 20px;
+    }
+
+    .content2 > h1 {
+        color: black;
+    }
+
+    .content2 > h3 {
+        color: black;
+        font-size: 14px;
+    }
+}
